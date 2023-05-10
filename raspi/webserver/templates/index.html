@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+    <script src=" https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js "></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../static/js/bootstrap.min.js">
+    </script>
+    <title>cybercard-dresden</title>
+</head>
+<body>
+<h1>CYBERCARDZ</h1>
+<h2>weniger Platz, mehr Infos!</h2>
+<p>Willkommen bei <span>CYBERCARDZ</span> Dresden!</p>
+<form action="/new" method="post">
+    <div class="form-group form-group-lg">
+
+        <label for="ueberschrift">Überschrift</label>
+        <input id="ueberschrift" name="ueberschrift" type="text" class="form-control"
+               placeholder="Überschrift">
+    </div>
+    <div class="form-group">
+        <label for="text"> Notizen </label>
+        <textarea id="text" name="text" cols="100" rows="50"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="code">Code</label>
+        <input placeholder="Code" id="code" name="code" type="password">
+    </div>
+    <input class="btn btn-success" type="submit" value="Übertragen">
+</form>
+</body>
+</html>
+
+
+
