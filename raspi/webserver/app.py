@@ -14,9 +14,9 @@ versionNr =0
 @app.route("/new", methods=['POST'])
 def newcard():
     data = request.form
-    print(data['ueberschrift'])
-    print(data['text'])
-    print(data['code'])
+    println(data['ueberschrift'])
+    println(data['text'])
+    println(data['code'])
     global speichern
     speichern = Notiz(data['ueberschrift'], data['text'])
     global versionNr
